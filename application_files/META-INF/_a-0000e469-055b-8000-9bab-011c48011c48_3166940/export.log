@@ -1,0 +1,55 @@
+Success (2):
+application 104184 _a-0000e469-055b-8000-9bab-011c48011c48_3166940 "test"
+recordType 68 9b3a64ff-86cd-405d-9a9f-511a73b14181 "test"
+
+Referenced precedents that were not exported (1):
+dataStore 116960 _a-0000e2a7-90b8-8000-9ba2-011c48011c48_289232
+
+Trace:
+2020-06-26 00:41:17.951 DEBUG application 104184 _a-0000e469-055b-8000-9bab-011c48011c48_3166940 Begin transport.
+2020-06-26 00:41:17.951 DEBUG application 104184 _a-0000e469-055b-8000-9bab-011c48011c48_3166940 Retrieving object data.
+2020-06-26 00:41:17.956 DEBUG application 104184 _a-0000e469-055b-8000-9bab-011c48011c48_3166940 App associated objects: [recordType=[9b3a64ff-86cd-405d-9a9f-511a73b14181]]
+2020-06-26 00:41:17.957 DEBUG application 104184 _a-0000e469-055b-8000-9bab-011c48011c48_3166940 Invalid associated objects: []
+2020-06-26 00:41:17.957 DEBUG application 104184 _a-0000e469-055b-8000-9bab-011c48011c48_3166940 Adding valid associated objects to be exported: GlobalBindingMap[recordType={9b3a64ff-86cd-405d-9a9f-511a73b14181=68}]
+2020-06-26 00:41:17.958 DEBUG application 104184 _a-0000e469-055b-8000-9bab-011c48011c48_3166940 Setting uuids of object references.
+2020-06-26 00:41:17.958 DEBUG application 104184 _a-0000e469-055b-8000-9bab-011c48011c48_3166940 Processing reference: Application.forum
+2020-06-26 00:41:17.958 DEBUG application 104184 _a-0000e469-055b-8000-9bab-011c48011c48_3166940 Processing reference: Application.parent
+2020-06-26 00:41:17.961 DEBUG application 104184 _a-0000e469-055b-8000-9bab-011c48011c48_3166940 Processing reference: com.appiancorp.suiteapi.content.ContentRoleMap@7a3ec696[
+  ContentRole[name=readers,inherit=false,allowForAll=false]
+  ContentRole[name=authors,inherit=false,allowForAll=false]
+  ContentRole[name=administrators,inherit=false,allowForAll=false]
+  ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+  ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+  ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+  securityVector=1:SEC_PUBLIC=true,SEC_CREATOR_ADMIN=false,SEC_INH_ADMIN=false,SEC_INH_EDITOR=false,SEC_INH_VIEWER=false,SEC_ALL_ADMIN=false,SEC_ALL_EDITOR=false,SEC_ALL_VIEWER=false
+]
+2020-06-26 00:41:17.961 DEBUG application 104184 _a-0000e469-055b-8000-9bab-011c48011c48_3166940 Processing reference: ContentRole[name=readers,inherit=false,allowForAll=false]
+2020-06-26 00:41:17.961 DEBUG application 104184 _a-0000e469-055b-8000-9bab-011c48011c48_3166940 Processing reference: ContentRole[name=authors,inherit=false,allowForAll=false]
+2020-06-26 00:41:17.961 DEBUG application 104184 _a-0000e469-055b-8000-9bab-011c48011c48_3166940 Processing reference: ContentRole[name=administrators,inherit=false,allowForAll=false]
+2020-06-26 00:41:17.961 DEBUG application 104184 _a-0000e469-055b-8000-9bab-011c48011c48_3166940 Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+2020-06-26 00:41:17.961 DEBUG application 104184 _a-0000e469-055b-8000-9bab-011c48011c48_3166940 Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+2020-06-26 00:41:17.961 DEBUG application 104184 _a-0000e469-055b-8000-9bab-011c48011c48_3166940 Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+2020-06-26 00:41:17.962 DEBUG recordType 68 9b3a64ff-86cd-405d-9a9f-511a73b14181 Begin transport.
+2020-06-26 00:41:17.962 DEBUG recordType 68 9b3a64ff-86cd-405d-9a9f-511a73b14181 Retrieving object data.
+2020-06-26 00:41:17.98 DEBUG recordType 68 9b3a64ff-86cd-405d-9a9f-511a73b14181 Setting uuids of object references.
+2020-06-26 00:41:17.98 DEBUG recordType 68 9b3a64ff-86cd-405d-9a9f-511a73b14181 Processing reference: RecordTypeDefinition.dataSrcExpr
+2020-06-26 00:41:17.98 DEBUG recordType 68 9b3a64ff-86cd-405d-9a9f-511a73b14181 Processing reference: RecordTypeDefinition.defaultFilters
+2020-06-26 00:41:17.98 DEBUG recordType 68 9b3a64ff-86cd-405d-9a9f-511a73b14181 Processing reference: RecordTypeDefinition.defaultFiltersExpr
+2020-06-26 00:41:17.98 DEBUG recordType 68 9b3a64ff-86cd-405d-9a9f-511a73b14181 Processing reference: DetailViewCfg.headerExpr
+2020-06-26 00:41:17.98 DEBUG recordType 68 9b3a64ff-86cd-405d-9a9f-511a73b14181 Processing reference: DetailViewCfg.nameExpr
+2020-06-26 00:41:17.98 DEBUG recordType 68 9b3a64ff-86cd-405d-9a9f-511a73b14181 Processing reference: DetailViewCfg.uiExpr
+2020-06-26 00:41:17.98 DEBUG recordType 68 9b3a64ff-86cd-405d-9a9f-511a73b14181 Processing reference: DetailViewCfg.visibilityExpr
+2020-06-26 00:41:17.98 DEBUG recordType 68 9b3a64ff-86cd-405d-9a9f-511a73b14181 Processing reference: RecordTypeDefinition.facetsListExpr
+2020-06-26 00:41:17.98 DEBUG recordType 68 9b3a64ff-86cd-405d-9a9f-511a73b14181 Processing reference: RecordTypeDefinition.listViewSrcExpr
+2020-06-26 00:41:17.98 DEBUG recordType 68 9b3a64ff-86cd-405d-9a9f-511a73b14181 Processing reference: RecordTypeDefinition.listViewTemplateExpr
+2020-06-26 00:41:17.981 DEBUG recordType 68 9b3a64ff-86cd-405d-9a9f-511a73b14181 Processing reference: RecordTypeDefinition.recordViewSrcExpr
+2020-06-26 00:41:17.981 DEBUG recordType 68 9b3a64ff-86cd-405d-9a9f-511a73b14181 Processing reference: RecordTypeDefinition.source
+2020-06-26 00:41:17.985 DEBUG recordType 68 9b3a64ff-86cd-405d-9a9f-511a73b14181 Processing reference: RecordTypeDefinition.titleExpr
+2020-06-26 00:41:17.985 DEBUG recordType 68 9b3a64ff-86cd-405d-9a9f-511a73b14181 Completing produce.
+2020-06-26 00:41:17.985 DEBUG recordType 68 9b3a64ff-86cd-405d-9a9f-511a73b14181 Exporting binary resources.
+2020-06-26 00:41:17.985 DEBUG recordType 68 9b3a64ff-86cd-405d-9a9f-511a73b14181 Serializing object to XML.
+2020-06-26 00:41:17.989 DEBUG recordType 68 9b3a64ff-86cd-405d-9a9f-511a73b14181 Object transported.
+2020-06-26 00:41:17.989 DEBUG application 104184 _a-0000e469-055b-8000-9bab-011c48011c48_3166940 Completing produce.
+2020-06-26 00:41:17.989 DEBUG application 104184 _a-0000e469-055b-8000-9bab-011c48011c48_3166940 Exporting binary resources.
+2020-06-26 00:41:17.989 DEBUG application 104184 _a-0000e469-055b-8000-9bab-011c48011c48_3166940 Serializing object to XML.
+2020-06-26 00:41:17.995 DEBUG application 104184 _a-0000e469-055b-8000-9bab-011c48011c48_3166940 Object transported.

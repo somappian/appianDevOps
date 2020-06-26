@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recordTypeHaul xmlns:a="http://www.appian.com/ae/types/2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <versionUuid>601a2987-73f5-4c3c-9eb2-3148bc8fd488</versionUuid>
+  <recordType a:uuid="9b3a64ff-86cd-405d-9a9f-511a73b14181" name="test">
+    <a:pluralName>tests</a:pluralName>
+    <a:description/>
+    <a:urlStub>G0AYEQ</a:urlStub>
+    <a:source
+      a:uuid="8b912ad3-def5-403e-a0ff-c091006bed4e@_a-0000e2a7-90b8-8000-9ba2-011c48011c48_289232" xsi:type="a:DataStoreEntity"/>
+    <a:listViewTemplateExpr>#"SYSTEM_SYSRULES_recordGridLayoutColumns"(
+  pageSize: 50,
+  defaultSort: #"SYSTEM_SYSRULES_sortInfo"(
+    field: "pricingPlanName",
+    ascending: fn!true()
+  ),
+  columns: {
+    #"SYSTEM_SYSRULES_gridLayoutColumn"(
+      label: "Pricing Plan Name",
+      field: "pricingPlanName",
+      component: #"SYSTEM_SYSRULES_recordGrid_linkField"(
+        links: #"SYSTEM_SYSRULES_recordLink"(
+          label: rf!pricingPlanName,
+          recordType: rp!type,
+          identifier: rp!id
+        )
+      )
+    ),
+    #"SYSTEM_SYSRULES_gridLayoutColumn"(
+      label: "Created By",
+      field: "createdBy",
+      component: #"SYSTEM_SYSRULES_recordGrid_textField"(
+        displayValue: rf!createdBy,
+        align: null
+      )
+    ),
+    #"SYSTEM_SYSRULES_gridLayoutColumn"(
+      label: "Updated By",
+      field: "updatedBy",
+      component: #"SYSTEM_SYSRULES_recordGrid_textField"(
+        displayValue: rf!updatedBy,
+        align: null
+      )
+    ),
+    #"SYSTEM_SYSRULES_gridLayoutColumn"(
+      label: "Pricing Plan Id",
+      field: "pricingPlanId",
+      component: #"SYSTEM_SYSRULES_recordGrid_integerField"(
+        displayValue: rf!pricingPlanId,
+        align: "RIGHT"
+      )
+    )
+  },
+  shadeAlternateRows: true
+)</a:listViewTemplateExpr>
+    <a:detailViewCfg>
+      <a:nameExpr>="Summary"</a:nameExpr>
+      <a:uiExpr/>
+      <a:visibilityExpr>=true()</a:visibilityExpr>
+      <a:urlStub>summary</a:urlStub>
+      <a:headerExpr/>
+      <a:recordActionLaunchType>DIALOG</a:recordActionLaunchType>
+    </a:detailViewCfg>
+    <a:isSystem>false</a:isSystem>
+    <a:dataSrcExpr/>
+    <a:facetsListExpr/>
+    <a:titleExpr/>
+    <a:defaultFiltersExpr/>
+    <a:layoutType>GRID</a:layoutType>
+    <a:security>16383</a:security>
+    <a:hideLatestNews>false</a:hideLatestNews>
+    <a:isExportable>false</a:isExportable>
+    <a:listViewSrcExpr/>
+    <a:recordViewSrcExpr/>
+    <a:iconId/>
+    <a:listAutoRefreshInterval>0.0</a:listAutoRefreshInterval>
+    <a:enabledFeatures>15</a:enabledFeatures>
+    <a:isVisibleInRecordTypeList>true</a:isVisibleInRecordTypeList>
+    <a:recordActionLaunchType>DIALOG</a:recordActionLaunchType>
+  </recordType>
+  <roleMap/>
+  <history>
+    <historyInfo versionUuid="601a2987-73f5-4c3c-9eb2-3148bc8fd488"/>
+  </history>
+  <migrationVersion>1</migrationVersion>
+</recordTypeHaul>
