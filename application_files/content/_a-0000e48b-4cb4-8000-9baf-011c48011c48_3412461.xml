@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+    <versionUuid>_a-0000e48b-4cb4-8000-9baf-011c48011c48_3412464</versionUuid>
+    <rule>
+        <name>SS_GetAllStatus</name>
+        <uuid>_a-0000e48b-4cb4-8000-9baf-011c48011c48_3412461</uuid>
+        <description>Returns all status options for Sim-SNDs [Data]</description>
+        <parentUuid>875169c8-ef1e-4b3b-b45d-4f11438a0e86</parentUuid>
+        <visibility>
+            <advertise>false</advertise>
+            <hierarchy>true</hierarchy>
+            <indexable>true</indexable>
+            <quota>false</quota>
+            <searchable>true</searchable>
+            <system>false</system>
+            <unlogged>false</unlogged>
+        </visibility>
+        <definition>cast(
+  'type!{urn:com:appian:types:SS}SS_Status?list',
+  #"SYSTEM_SYSRULES_queryEntity_v1"(
+    entity: #"_a-0000e48b-4cb4-8000-9baf-011c48011c48_3412445",
+    query: #"SYSTEM_SYSRULES_query"(
+      pagingInfo: #"SYSTEM_SYSRULES_pagingInfo"(1, -1, #"SYSTEM_SYSRULES_sortInfo"("order", true))
+    ),
+    fetchTotalCount: false
+  ).data
+)</definition>
+        <preferredEditor>legacy</preferredEditor>
+        <offlineEnabled>false</offlineEnabled>
+    </rule>
+    <roleMap public="false">
+        <role inherit="true" allowForAll="false" name="readers">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="true" allowForAll="false" name="authors">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="true" allowForAll="false" name="administrators">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyReaders">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyAuthors">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyAdministrators">
+            <users/>
+            <groups/>
+        </role>
+    </roleMap>
+    <history>
+        <historyInfo versionUuid="_a-0000e48b-4cb4-8000-9baf-011c48011c48_3412464"/>
+    </history>
+</contentHaul>
