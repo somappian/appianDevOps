@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><applicationHaul xmlns:a="http://www.appian.com/ae/types/2009">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<applicationHaul xmlns:a="http://www.appian.com/ae/types/2009">
     <versionUuid>_a-0000e48b-4cb4-8000-9baf-011c48011c48_3565788</versionUuid>
     <application>
         <name>test</name>
@@ -245,4 +246,4 @@
     <history>
         <historyInfo versionUuid="_a-0000e48b-4cb4-8000-9baf-011c48011c48_3565788"/>
     </history>
-</applicationHaul>
+</applicationHaul><!--updated on 2020-06-26T01:08:28.792-->
